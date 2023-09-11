@@ -19,14 +19,14 @@ def main():
     config = {
         'id': 1,
         'env_setting': 'win',
-        'client_path': 'path-to-game-client',
+        'client_path': 'D:\work\DunkCityDynasty\game\game_package_release',
         'rl_server_ip': '127.0.0.1',
         'rl_server_port': 42636,
-        'game_server_ip': '127.0.0.1',
-        'game_server_port': 18000,
+        'game_server_ip': '47.111.110.225',
+        'game_server_port': 18001,
         'machine_server_ip': '',
         'machine_server_port': 0,
-        'user_name': 'xxxx',
+        'user_name': 'qmxz8j3ef6al3',
         'episode_horizon': 100000
     }
 
@@ -62,7 +62,7 @@ def main():
 
     env = GymEnv(config)
     agent = RandomAgent()
-    user_name = "xxxxx"
+    user_name = "qmxz8j3ef6al3"
     states, infos = env.reset(user_name = user_name, render = True)
     while True:
         actions = agent.get_actions(states)
